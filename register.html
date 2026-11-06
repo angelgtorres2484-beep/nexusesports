@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción - Nexus Esports</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Estilos rápidos específicos para que el formulario se vea ordenado -->
+    <style>
+        .form-card {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #121824;
+            padding: 2.5rem;
+            border-radius: 8px;
+            border: 1px solid #1f293d;
+        }
+        .form-group {
+            margin-bottom: 1.2rem;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: #0b0e14;
+            border: 1px solid #1f293d;
+            border-radius: 4px;
+            color: #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">⚡ NEXUS ESPORTS</div>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="games.html">Juegos</a>
+            <a href="calendar.html">Calendario</a>
+            <a href="standings.html">Clasificación</a>
+            <a href="register.html" class="active btn-nav">Inscripción</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="form-card">
+            <h2 style="color: #00ffcc; margin-bottom: 1.5rem; text-align: center;">Registro al Torneo</h2>
+            <form onsubmit="event.preventDefault(); alert('¡Inscripción registrada con éxito!');">
+                <div class="form-group">
+                    <label>Nombre del Jugador o Equipo:</label>
+                    <input type="text" required placeholder="Ej. Team Phantom">
+                </div>
+                <div class="form-group">
+                    <label>Correo Electrónico de Contacto:</label>
+                    <input type="email" required placeholder="correo@domain.com">
+                </div>
+                <div class="form-group">
+                    <label>Disciplina Seleccionada:</label>
+                    <select required>
+                        <option value="">Selecciona un juego...</option>
+                        <option value="fighting">Fighting Games (1v1)</option>
+                        <option value="shooter">Tactical Shooters (5v5)</option>
+                        <option value="br">Battle Royale (Solo/Dúos)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-main" style="width: 100%; cursor: pointer; border: none; margin-top: 1rem;">Confirmar Inscripción</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Nexus Esports Hub. Todos los derechos reservados.</p>
+    </footer>
+    <script src="main.js"></script>
+
+</body>
+</html>
